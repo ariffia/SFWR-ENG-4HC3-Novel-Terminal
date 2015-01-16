@@ -1,0 +1,15 @@
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\bin\Debug\Wpf5.exe.config
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\bin\Debug\Wpf5.exe
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\bin\Debug\Wpf5.pdb
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.csprojResolveAssemblyReference.cache
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\MainWindow.baml
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\MainWindow.g.cs
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\App.g.cs
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5_MarkupCompile.cache
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.g.resources
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.Properties.Resources.resources
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.csproj.GenerateResource.Cache
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.exe
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\Wpf5.pdb
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\window\Status.baml
+D:\4HC3 Workspace\Wpf5\Wpf5\Wpf5\obj\Debug\window\Status.g.cs

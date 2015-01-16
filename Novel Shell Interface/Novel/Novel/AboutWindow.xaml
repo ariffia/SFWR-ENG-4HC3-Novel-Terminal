@@ -1,0 +1,9 @@
+﻿<Window x:Class="Novel.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="300" Width="300">
+    <Grid>
+        <TextBlock Margin="0" TextWrapping="Wrap" FontFamily="Georgia" FontSize="14" TextAlignment="Center"><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold" Text="Novel Shell Interface"/><LineBreak/><Run Text="2014"/><LineBreak/><Run/><LineBreak/><Run Text="by"/><LineBreak/><Run/><LineBreak/><Run Text="Amir Ariffin"/><LineBreak/><Run Text="Musharraf Azeem"/></TextBlock>
+
+    </Grid>
+</Window>

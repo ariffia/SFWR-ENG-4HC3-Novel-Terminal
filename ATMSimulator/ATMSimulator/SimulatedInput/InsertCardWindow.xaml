@@ -1,0 +1,21 @@
+﻿<Window x:Class="ATMSimulator.SimulatedInput.InsertCardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoginWindow" Height="242" Width="402"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+            <GradientStop Color="#FFD6D6D6" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="10,10,0,140" Width="372"><Run Text="Simulate the Card Insert. Please Enter a 16 Digit Number. Then Click &quot;Insert Card&quot;. The only valid card number input is 1234567812345678."/></TextBlock>
+        <TextBox x:Name="CardNumberField" Margin="10,63,10,104" Text="1234567812345678" FontSize="24" TextAlignment="Center"/>
+        <Button MaxWidth="100" Click="InsertCard_Click" Content="&quot;Insert Card&quot;" Margin="10,114,10,55" RenderTransformOrigin="0.768,0.957"/>
+    </Grid>
+</Window>

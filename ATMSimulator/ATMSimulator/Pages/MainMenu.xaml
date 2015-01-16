@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="ATMSimulator.Pages.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             >
+
+    <Grid HorizontalAlignment="Center" Height="271" VerticalAlignment="Center" Width="650">
+
+        <Grid Margin="0,0,0,221">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="325" />
+                <ColumnDefinition Width="325" />
+            </Grid.ColumnDefinitions>
+
+            <WrapPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock Margin="5" FontSize="16" HorizontalAlignment="Left"><Run Text="Chequing Account Balence:"/></TextBlock>
+                <Button x:Name="ChequingBalenceButton" Width="100" Click="ShowChequingBalence_Click" Content="Show"/>
+                <TextBlock x:Name="ChequingBalenceLabel" Width="100" Margin="5" FontSize="16" Visibility="Collapsed"/>
+            </WrapPanel>
+
+            <WrapPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock Margin="5" FontSize="16"><Run Text="Savings Account Balence:"/></TextBlock>
+                <Button x:Name="SavingsBalenceButton" Width="100" Click="ShowSavingBalence_Click" Content="Show"/>
+                <TextBlock x:Name="SavingsBalenceLabel"  Margin="5" Width="100" FontSize="16" Visibility="Collapsed"/>
+            </WrapPanel>
+        </Grid>
+        <TextBlock x:Name="NotificationLabel" Margin="5,55,5,190" Foreground="#FF008D06" FontSize="14" FontWeight="Bold"/>
+
+
+        <Grid Margin="0,91,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="QuickWithdrawlButton" Grid.Row="0" Grid.Column="0" Margin="5" FontSize="16" Click="QuickWithdrawl_Click" Content="Quick Withdrawl"/>
+            <Button Grid.Row="1" Grid.Column="0" Margin="5" Click="Withdrawl_Click" Content="Withdrawl"/>
+            <Button Grid.Row="2" Grid.Column="0" Margin="5" Click="Transfer_Click" Content="Transfer"/>
+            <Button Grid.Row="3" Grid.Column="0" Margin="5" FontSize="16" Click="Deposit_Click" Content="Deposit"/>
+
+            <Button Grid.Row="0" Grid.Column="3" Margin="5" FontSize="16" Click="PayBills_Click" IsEnabled="False" Content="Pay Bill"/>
+            <Button Grid.Row="1" Grid.Column="3" Margin="5" Click="ManagePayees_Click" IsEnabled="False" Content="Manage Payees"/>
+            <Button Grid.Row="2" Grid.Column="3" Margin="5" Click="Settings_Click" IsEnabled="False" Content="Settings"/>
+            <Button Grid.Row="3" Grid.Column="3" Margin="5" FontSize="16" Click="End_Click" Content="End Session"/>
+        </Grid>
+        <Label Content="ABC Banking" Margin="193,-97,178,0" VerticalAlignment="Top" FontSize="48"/>
+    </Grid>
+</UserControl>

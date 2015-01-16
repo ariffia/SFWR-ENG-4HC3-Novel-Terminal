@@ -1,0 +1,20 @@
+﻿ATMSimulator
+
+
+winexe
+C#
+.cs
+D:\4HC3 Workspace\ATMSimulator\ATMSimulator\obj\Debug\
+ATMSimulator
+none
+false
+DEBUG;TRACE
+D:\4HC3 Workspace\ATMSimulator\ATMSimulator\App.xaml
+201492034057
+101920352117
+35369493893
+141012385901
+MainWindow.xaml;Pages\AddPayeePage.xaml;Pages\ChangePinPage.xaml;Pages\DestroyCardPage.xaml;Pages\LoginPage.xaml;Pages\DepositPage.xaml;Pages\InsertCardPage.xaml;Pages\InsertDepositoryPage.xaml;Pages\MainMenu.xaml;Pages\ModifyPayeePage.xaml;Pages\PayBillPage.xaml;Pages\PayeeManagementPage.xaml;Pages\QuickWithdrawlConfigPage.xaml;Pages\RemoveCardPage.xaml;Pages\RemovePayeePage.xaml;Pages\SettingPage.xaml;Pages\TransferPage.xaml;Pages\WithdrawlPage.xaml;Pages\WelcomePage.xaml;SimulatedInput\InsertCardWindow.xaml;
+
+False
+

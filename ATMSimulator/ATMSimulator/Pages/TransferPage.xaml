@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="ATMSimulator.Pages.TransferPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+    <Grid Height="431" Width="521">
+        <Grid Margin="0,0,0,261">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" FontSize="18" Content="Deposit from"/>
+            <Button x:Name="FromChequingButton" Grid.Row="1" Grid.Column="0" Margin="10" MinHeight="40" FontSize="16" Click="SelectAccount_Click" Tag="From,Chequing" Content="Chequing"/>
+            <Button x:Name="FromSavingButton" Grid.Row="2" Grid.Column="0" Margin="10" MinHeight="40" FontSize="16" Click="SelectAccount_Click" Tag="From,Saving" Content="Savings"/>
+
+            <Image Grid.Row="0" Grid.Column="1" Height="50" Source="/Pictures/Hints/Arrow.png"/>
+
+            <Label Grid.Row="0" Grid.Column="2" FontSize="18" Content="Deposit into"/>
+            <Button x:Name="ToChequingButton" Grid.Row="1" Grid.Column="2" Margin="10" MinHeight="40" FontSize="16" Click="SelectAccount_Click" Tag="To,Chequing" Content="Chequing"/>
+            <Button x:Name="ToSavingButton" Grid.Row="2" Grid.Column="2" Margin="10" MinHeight="40" FontSize="16" Click="SelectAccount_Click" Tag="To,Savings" Content="Savings"/>
+
+        </Grid>
+
+        <WrapPanel Margin="0,170,0,0">
+
+            <StackPanel Width="200" VerticalAlignment="Bottom">
+                <TextBlock x:Name="ConfirmationText" TextWrapping="Wrap" Margin="10" Height="189"><Run Text="Please select a source account, destination account, and amount."/></TextBlock>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0" Margin="10" Height="40" Click="Cancel_Click" Content="Cancel"/>
+                    <Button x:Name="ConfirmButton" Grid.Row="0" Grid.Column="1" Margin="10" Height="40" IsEnabled="False" Click="ConfirmButton_Click" Content="Transfer"/>
+                </Grid>
+            </StackPanel>
+
+            <WrapPanel Background="#9999ff">
+                <!--START OF NUMBERPAD-->
+                <StackPanel Margin="10">
+                    <WrapPanel Margin="5">
+                        <Label FontSize="16" Content="$"/>
+                        <TextBox x:Name="TransactionAmount" FontSize="16" Width="120" IsReadOnly="True" MaxLength="9"/>
+                    </WrapPanel>
+
+                    <!--NumberPad less 0 and .-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="1" Tag="1" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="2" Tag="2" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="3" Tag="3" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="4" Tag="4" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="5" Tag="5" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="6" Tag="6" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="7" Tag="7" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="8" Tag="8" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="9" Tag="9" Click="AppendToTextbox_Click"/>
+                    </Grid>
+
+                    <!--0 and button to its right-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" MinWidth="90" Margin="3" Content="0" Tag="0" Click="AppendToTextbox_Click"/>
+                        <Button Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" MinWidth="40" Margin="3" Content="." Click="Decimal_Click"/>
+                    </Grid>
+                </StackPanel>
+                <!--END OF NUMBERPAD-->
+
+                <StackPanel Width="100">
+                    <Button Margin="0, 15, 10, 10" FontSize="14" Height="35" Click="backspace_Click" Content="Backspace"/>
+                    <Button Margin="0, 15, 10, 10" FontSize="14" Height="35" Click="clear_Click" Content="Clear Field"/>
+                </StackPanel>
+            </WrapPanel>
+        </WrapPanel>
+        <Label Content="*Minimum transfer = $10.00" HorizontalAlignment="Left" Margin="0,334,0,0" VerticalAlignment="Top"/>
+    </Grid>
+
+</UserControl>

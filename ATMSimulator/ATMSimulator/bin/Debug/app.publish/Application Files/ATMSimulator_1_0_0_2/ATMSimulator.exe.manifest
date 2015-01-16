@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ATMSimulator.exe" version="1.0.0.2" publicKeyToken="1ea31fecea6b9f3e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ATMSimulator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ATMSimulator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ATMSimulator.exe" size="80808">
+      <assemblyIdentity name="ATMSimulator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KA2esQxyhIx8ymxMT7X+/NK16xD0ioyukhj9XVZGWq0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ATMSimulator.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Hints\Arrow.png" size="638">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f0W7dmgIL8ODxOJ3+H931Ui2mwv0vyhA674L3gc1KNo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Hints\InsertCard.png" size="4072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tKTjYUhJgEuRv+D44FGFbqBuD1CTPQ8vxI8nSl5smVg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Arabic.png" size="993">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZPLPbKkZ9gKaEJvZ41QxpRj2z2OGXs+l0Eax1TEv9wg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Cantonese.png" size="1148">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bai+oKeWz6vz5mGbkdeunAfbdXRD/8aigHYOOVejXN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Deutsch.png" size="1272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KyxlgiEy4i6pj2yrOkQLdeuiRxxDt18tzbHmH4YubK0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\English.png" size="1154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7cLt+5Geyp6BdJSJrcGGY3pO8DhQiA3zD6uEqxiZGTo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\French.png" size="1225">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gzT7xk34FdQLdmwivDgXjGbO69C5zOXChIXcWpL8nDU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Mandarin.png" size="927">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jjIev+dQkIzvzYDY/XCwBJGTDpulTfHpoLJpTLNhlMg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Swedish.png" size="1203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j+IOegMNOSMAf+nKxbthz+ga3EFEeK2h4FRJnucZTN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pictures\Language\Urdu.png" size="1089">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pCYUVVzp5Dr0dWp6Agc1WSAFLDjENHnBolWXBfZxESY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Omar-PC\Omar" issuerKeyHash="62e1c367fdd8af0e60e5afd1c83ccdf82ec0e740" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LgQuam5B+CwCORjLnEdEBvy8pmd3NFAqEWAMFmcXWCY=</DigestValue></Reference></SignedInfo><SignatureValue>NN8PaPy+hANW/GyCEP/lcU6bPsnNtMplunOioYyuF1shDkkNl4flWhGxPf4AvMoICZA9Vt97wIP6XlPnAlHKrGRtVjTy1jT0gnqTm+1cYdZJP74ejByBArHylwCjaNSfLRJrNC9L417Rd9LSf95FkJlLw3sSdkbKlCEZytfReJA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4mtqoLSKwQnNDYE/dYgnUqQtwczf5Rr4IHuMhLynG0mWXd0HoZ5u20Uioj1YTrYgc3HqhhOZeeYZpb3GqQdJZ2p+GXR1L10ZJJqUjijnddy43yenSonPvptUSnLjT1OtB2sK2y8wmH7LQRHgIxZij+eMQUldJebykywbKTFwMys=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="26581767160c60112a50347767a6bcfc0644479ccb1839022cf8416e6a2e042e" Description="" Url=""><as:assemblyIdentity name="ATMSimulator.exe" version="1.0.0.2" publicKeyToken="1ea31fecea6b9f3e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Omar-PC\Omar</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EfQQmBx2Y5SN5VQoPbM+N1+EWsSeXNZZhy17GmRNIv4=</DigestValue></Reference></SignedInfo><SignatureValue>K3uY0XcUklj2MdMgPp1GHpg8wNlI4XaT7ORLVFufSX1ji825r6W69TwNWp2VPkU5euYXbDQQv44ML3YWPg1N1frDswPdU4Cr/ZLSIDQQN0sxh+yxoirD7yR9BYk2xMnaFrKWOouT5FDQ05AeXcf+X7GGvHeLcGSeNIEoQxAg1II=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4mtqoLSKwQnNDYE/dYgnUqQtwczf5Rr4IHuMhLynG0mWXd0HoZ5u20Uioj1YTrYgc3HqhhOZeeYZpb3GqQdJZ2p+GXR1L10ZJJqUjijnddy43yenSonPvptUSnLjT1OtB2sK2y8wmH7LQRHgIxZij+eMQUldJebykywbKTFwMys=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQGoZHtiD9BaBC6Xn2C5v7/zANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgATwBtAGEAcgAtAFAAQwBcAE8AbQBhAHIwHhcNMTQxMTA2MjE0MjI0WhcNMTUxMTA3MDM0MjI0WjAjMSEwHwYDVQQDHhgATwBtAGEAcgAtAFAAQwBcAE8AbQBhAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOJraqC0isEJzQ2BP3WIJ1KkLcHM3+Ua+CB7jIS8pxtJll3dB6GebttFIqI9WE62IHNx6oYTmXnmGaW9xqkHSWdqfhl0dS9dGSSalI4o53XcuN8np0qJz76bVEpy409TrQdrCtsvMJh+y0ER4CMWYo/njEFJXSXm8pMsGykxcDMrAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAQwwOtgJH0VGPasHG9TBIUyrySF0cGxdmXtZEd2RhIxRjPFqBbxm5OgQhtLkQ2bGpA5ZxIwbnxMqpkZLlCwpzLe0zi08lE4O22yYyhYuzDAy2j6njy2W/gJAAB84F/8mlAob36KhsXseV+QuUa1qAlQY44vDDWJEEHnbv70WUvEE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
